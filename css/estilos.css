@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft-blue);
+    font-weight:300 ;
+
+}
+.container{
+    width: 100% ;
+    height: 100vh; 
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.targeta{
+    width: 350px;
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px #000;
+    
+}
+.imagen{
+    width: 100%;
+    border-radius: 8px;
+}
+.container .targeta .container-img{
+    position: relative;
+    
+}
+.mascara-img{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    opacity: 0;
+}
+.mascara-img:hover{
+    opacity: 1;    
+}
+
+.titulo{
+    color: var(--White);
+    margin: 15px 0;
+    font-size: 20px;
+}
+.titulo:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.parrafo{
+    font-size: 18px;
+}
+.item-dia ul{
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 0;
+    border-bottom: 1px solid hsl(215, 51%, 70%, 20%);
+    
+}
+.item-dia ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+}
+
+.item-dia ul li:first-child{
+    color: var(--Cyan);
+}
+.item-dia ul li img{
+    padding-right: 10px;
+}
+.item-autor{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.item-autor img{
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right: 15px;
+}
+.span{
+    color:#fff;
+}
+.span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution{
+    display: flex;
+    justify-content:  center;
+    background-color: var(--Very-dark-blue-main-BG);
+    padding:20px;
+}
+
+@media (max-width:500px){
+    .targeta{
+        width: 300px;        
+    }
+
+    .parrafo{
+        font-size: 15px;
+    }
+    .attribution{
+        font-size: 12px;
+    }
+}
